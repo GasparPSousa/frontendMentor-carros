@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.6rem;
+}
+
+body {
+    
+    background-color: hsl(0, 0%, 95%);    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+   
+}
+
+.flex__cars__container {
+    display: flex;
+    flex-direction: column;
+    /* margin: 75px 20px; */
+    margin: 3rem 1.5rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    /* margin: ; */
+}
+
+.flex__cars__container > .car__item > h2 {
+    text-transform: uppercase;
+    margin: 30px 0;
+    font-size: 2.5rem;
+    line-height: 1.6rem;
+}
+
+
+/* > vc pega somente os filhos direto */
+/* .flex__cars__container > section {
+
+} */
+
+.flex__cars__container > .car__item {
+    /* padding: 50px 30px; */
+    padding: 2.5rem 2rem
+    /* margin: 2.5rem 1.5rem; */
+}
+
+.flex__cars__container .car__sedam {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.flex__cars__container .car__suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.flex__cars__container .car__luxury {
+    background-color:  hsl(179, 100%, 13%);
+}
+
+.car__item button {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 60%;
+    margin-top: 2rem;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    
+
+}
+
+.car__sedam button {
+    color:hsl(31, 77%, 52%);
+}
+
+.car__suv button {
+    color:hsl(184, 100%, 22%);
+}
+
+.car__luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+
+@media (min-width: 1440px) {
+    main {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex__cars__container {
+        flex-direction: row;
+        width: 60%;
+        
+    }
+
+    .flex__cars__container p {
+        margin-bottom: 3rem;
+        line-height: 1.7rem;
+    }
+
+
+}
